@@ -199,7 +199,7 @@ namespace Revolution
                 public override bool Resolve(TargetedActionArguments[] arguments = null)
                 {
                     //Swap the cubes in any two Influence spaces
-                    for (int i = 0; i < arguments.Count() && i < 2; i++)
+                    for (int i = 0; arguments !=null && i < arguments.Count() && i < 2; i++)
                     {
                         var arg = arguments[i];
                         arg.Source.Area.RemoveInfluence(arg.Source.Player);
